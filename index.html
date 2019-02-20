@@ -4,7 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome CDN -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS stylesheet import -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Intro_Chicago</title>
   </head>
-  <body></body>
+  <body>
+    <div class="top-bar">
+      <div class="logo">Intro Chicago</div>
+      <div class="menu navBar">
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">About Intro</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner-text">
+        <div class="banner-text-items">
+          <h2>Banner Text Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            fugiat? Nobis molestias libero a, illo alias consequuntur? Error
+            incidunt est earum quidem voluptates facere deserunt repudiandae
+            nesciunt eligendi. Corrupti, doloremque!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="contact-text">
+        <div class="contact-items">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="Your Name..." />
+          <input type="text" placeholder="Your Email..." />
+          <input type="text" placeholder="Your Member Number..." />
+          <input type="text" placeholder="Your Phone Number..." />
+          <input type="text" placeholder="Your Phone Number..." />
+
+          <select name="Dining Options">
+            <option value="noChoice"
+              >Please select a time and date form the list below</option
+            >
+            <option value="Fri_Early">Friday, March 1st 2019 - 5:30pm</option>
+            <option value="Fri_Late">Friday, March 1st 2019 - 9:00pm</option>
+            <option value="Sat_Early">Saturday, March 2st 2019 - 5:30pm</option>
+            <option value="Sat-Late">Saturday, March 2st 2019 - 9:00pm</option>
+          </select>
+
+          <select name="Party Size">
+            <option value="noChoice">How many in your party</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <p>
+            If you have more than 8 to your party please call us directly @
+            847.555.4929
+          </p>
+          <textarea
+            name="allergies"
+            id="allergies"
+            cols="20"
+            rows="3"
+            placeholder="List any food allergens here..."
+          ></textarea>
+          <a href="#">Submit</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
