@@ -45,48 +45,104 @@
     <div class="contact">
       <div class="contact-text">
         <div class="contact-items">
-          <h2>Contact Us</h2>
-          <input type="text" placeholder="Your Name..." />
-          <input type="text" placeholder="Your Email..." />
-          <input type="text" placeholder="Your Member Number..." />
-          <input type="text" placeholder="Your Phone Number..." />
-          <input type="text" placeholder="Your Phone Number..." />
+          <h2>Tasting Experience</h2>
+          <form>
+            <input
+              class="firstNameInput"
+              type="text"
+              placeholder="First Name..."
+            />
+            <input
+              class="lastNameInput"
+              type="text"
+              placeholder="Last Name..."
+            />
+            <br />
 
-          <select name="Dining Options">
-            <option value="noChoice"
-              >Please select a time and date form the list below</option
-            >
-            <option value="Fri_Early">Friday, March 1st 2019 - 5:30pm</option>
-            <option value="Fri_Late">Friday, March 1st 2019 - 9:00pm</option>
-            <option value="Sat_Early">Saturday, March 2st 2019 - 5:30pm</option>
-            <option value="Sat-Late">Saturday, March 2st 2019 - 9:00pm</option>
-          </select>
+            <input class="emailInput" type="text" placeholder="Your Email..." />
+            <input
+              class="memberNumInput"
+              type="text"
+              placeholder="Your Member Number..."
+            />
+            <br />
 
-          <select name="Party Size">
-            <option value="noChoice">How many in your party</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-          </select>
-          <p>
-            If you have more than 8 to your party please call us directly @
-            847.555.4929
-          </p>
-          <textarea
-            name="allergies"
-            id="allergies"
-            cols="20"
-            rows="3"
-            placeholder="List any food allergens here..."
-          ></textarea>
-          <a href="#">Submit</a>
+            <input
+              class="phoneNumInput"
+              type="text"
+              placeholder="Your Phone Number..."
+            />
+            <input
+              class="zipCodeInput"
+              type="text"
+              placeholder="Your Zip Code..."
+            />
+            <br />
+            <br />
+            <select class="dateInput" name="Dining Options">
+              <option value="noChoice">Please Select A Time And Date</option>
+              <option value="noChoice">--------------</option>
+              <option value="Fri_Early">Friday, March 1st 2019 - 5:30pm</option>
+              <option value="Fri_Late">Friday, March 1st 2019 - 9:00pm</option>
+              <option value="noChoice">--------------</option>
+              <option value="Sat_Early"
+                >Saturday, March 2st 2019 - 5:30pm</option
+              >
+              <option value="Sat-Late"
+                >Saturday, March 2st 2019 - 9:00pm</option
+              >
+            </select>
+            <br />
+            <br />
+
+            <select class="partySizeInput" name="Party Size">
+              <option value="noChoice">How Many In Your Party</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+            <p>
+              If you have more than 8 to your party please call us directly @
+              847.555.4929
+            </p>
+            <br />
+
+            <textarea
+              name="allergies"
+              class="allergyInput"
+              cols="20"
+              rows="3"
+              placeholder="List any food allergens here..."
+            ></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+      <div class="footer-top">
+        <p>Top-Footer</p>
+      </div>
+      <div class="footer-bottom">
+        <p>Bottom-Footer</p>
+      </div>
+    </div>
+
+    <!-- Jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Import -->
+    <script src="./assets/javaScript/app.js"></script>
   </body>
 </html>
