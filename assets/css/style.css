@@ -85,8 +85,8 @@ body {
 }
 
 .btn {
-  background-color: orangered;
-  border: none;
+  background-color: maroon;
+  border: snow 1px solid;
   color: white;
   padding: 25px;
   text-align: center;
@@ -100,7 +100,7 @@ body {
 }
 
 .btn:hover {
-  background-color: rgb(160, 43, 1);
+  background-color: rgb(80, 1, 1);
   box-shadow: white 1px 1px;
 }
 .bottom-container {

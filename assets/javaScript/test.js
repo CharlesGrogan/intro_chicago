@@ -1,4 +1,5 @@
 $(function() {
+  //  Hide all Error Messages
   $("#fNameErr").hide();
   $("#lNameErr").hide();
   $("#emailErr").hide();
@@ -11,6 +12,7 @@ $(function() {
   let error_partySize = false;
   let error_dateSelect = false;
 
+  // When User Clicks Off the Input Field and Has Not Met the Criteria Trigger Function
   $("#firstNameInput").focusout(function() {
     check_firstName();
   });
@@ -27,48 +29,50 @@ $(function() {
     check_partySize();
   });
 
-  $("dateSelect").focusout(function() {
+  $("#dateSelect").focusout(function() {
     check_dateSelect();
   });
 
+  // Validate First Name Input
   function check_firstName() {
-    const firstName_length = $("#firstNameInput").val.length;
-
-    if (firstName_length < 1) {
+    const firstName = $("#firstNameInput").val();
+    if (firstName == "") {
       $("#fNameErr").html("Please Enter Your First Name");
       $("#fNameErr").show();
       error_fName = true;
     } else {
-      $("fNameErr").hide();
+      $("#fNameErr").hide();
     }
   }
 
+  // Validate Last Name Input
   function check_lastName() {
-    const lastName_length = $("#lastNameInput").val.length;
-
-    if (lastName_length < 1) {
+    const lastName = $("#lastNameInput").val();
+    if (lastName == "") {
       $("#lNameErr").html("Please Enter Your Last Name");
       $("#lNameErr").show();
       error_lName = true;
     } else {
-      $("lNameErr").hide();
+      $("#lNameErr").hide();
     }
   }
 
+  // Validate Email Address
   function check_email() {
-    const pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.{2,4}$/i);
+    const pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
     if (pattern.test($("#emailInput").val())) {
       $("#emailErr").html("Please Enter a Valid Email");
       $("#emailErr").show();
       error_email = true;
     } else {
-      $("emailErr").hide();
+      $("#emailErr").hide();
     }
   }
 
+  // Validate Party Size Option
   function check_partySize() {
-    const partySize = $("#partySize").val;
+    const partySize = $("#partySize").val();
 
     if (partySize == "noValue") {
       $("#partySizeErr").html("Please Select the Number of Guests");
@@ -79,8 +83,9 @@ $(function() {
     }
   }
 
+  // Validate Date Select Option
   function check_dateSelect() {
-    const dateSelect = $("#dateSelect").val;
+    const dateSelect = $("#dateSelect").val();
 
     if (dateSelect == "noValue") {
       $("#dateSelectErr").html("Please Select a Valid Date Option");
@@ -91,7 +96,10 @@ $(function() {
     }
   }
 
-  $("#submit").submit(function() {
+  // When User Clicks on the Submit Button
+  $("#submit").on("click", function() {
+    event.preventDefault();
+
     error_fName = false;
     error_lName = false;
     error_email = false;
@@ -117,3 +125,50 @@ $(function() {
     }
   });
 });
+
+// const first_name = $("#firstNameInput").val();
+// const last_name = $("#lastNameInput").val();
+// const email = $("#emailInput").val();
+// const partySize = $("#partySize").val();
+
+// console.log(last_name);
+// console.log(email);
+// console.log(first_name);
+// console.log(partySize);
+// console.log(dateSelect);
+
+// const dateSelect = $("#dateSelect").val();
+// const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+//     if (first_name == "") {
+//       $("#fNameErr").html("Please Enter Your First Name");
+//     } else {
+//       return false;
+//     }
+
+//     if (last_name == "") {
+//       $("#lNameErr").html("Please Enter Your Last Name");
+//     } else {
+//       return false;
+//     }
+
+//     if (pattern.test(email)) {
+//       $("#emailErr").html("Please Enter a Valid Email");
+//     } else {
+//       return false;
+//     }
+
+//     if (partySize == "noValue") {
+//       $("#partySizeErr").html("Please Select the Number of Guests");
+//     } else {
+//       return false;
+//     }
+
+//     if (dateSelect == "noValue") {
+//       $("#dateSelectErr").html("Please Select a Valid Date");
+//     } else {
+//       return false;
+//     }
+
+//     $("#reservationForm").trigger("reset");
+//   });
+// });

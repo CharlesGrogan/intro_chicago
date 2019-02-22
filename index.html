@@ -58,7 +58,7 @@
         </h2>
         <!-- Form -->
         <div class="form-section">
-          <form>
+          <form id="reservationForm">
             <!-- First Name Input -->
             <div class="form-group">
               <label for="firstNameInput">First Name</label>
@@ -70,9 +70,7 @@
                 placeholder="First Name (Required)"
               />
               <br />
-              <span id="fNameErr" style="color:red; font-weight:bold"
-                >hello</span
-              >
+              <span id="fNameErr" style="color:red; font-weight:bold"></span>
             </div>
 
             <!-- Last name Input -->
@@ -86,9 +84,7 @@
                 placeholder="Last Name (Required)"
               />
               <br />
-              <span id="lNameErr" style="color:red; font-weight:bold"
-                >hello</span
-              >
+              <span id="lNameErr" style="color:red; font-weight:bold"></span>
             </div>
 
             <!-- Email Input -->
@@ -109,14 +105,12 @@
             <div class="form-group">
               <label for="zipCode">Zip Code</label>
               <input
-                type="number"
+                type="text"
                 class="form"
                 id="zipCode"
                 aria-describedby="zipCode"
-                placeholder="Zip Code (Required)"
+                placeholder="Zip Code"
               />
-              <br />
-              <span id="zipCodeErr" style="color:red; font-weight:bold"></span>
             </div>
 
             <!-- Frequent Diner Number Input -->
@@ -136,7 +130,7 @@
             <div class="form-group">
               <label for="partySize">Number of Guests In Party</label>
               <select class="form" id="partySize">
-                <option value="noOption">Number of Guests</option>
+                <option value="noValue">Number of Guests</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -163,7 +157,7 @@
             <div class="form-group">
               <label for="dateSelect">Select Date & Time</label>
               <select class="form" id="dateSelect">
-                <option value="noChoice">Select a Time & Date</option>
+                <option value="noValue">Select a Time & Date</option>
                 <option value="Fri_Early"
                   >Friday, March 1st, 2019 - 5:30pm</option
                 >
@@ -218,7 +212,9 @@
             <br />
 
             <!-- Submit Button -->
-            <button type="submit" class="submitBtn btn">Book Now</button>
+            <button type="submit" id="submit" class="submitBtn btn">
+              Book Now
+            </button>
           </form>
         </div>
       </div>
@@ -267,6 +263,7 @@
     ></script>
 
     <!-- Import JavaScript -->
-    <script src="./assets/javaScript/app.js"></script>
+    <!-- <script src="./assets/javaScript/app.js"></script> -->
+    <script src="./assets/javaScript/test.js"></script>
   </body>
 </html>
