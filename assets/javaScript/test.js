@@ -104,23 +104,27 @@ $(function() {
   $("#submit").on("click", function() {
     event.preventDefault();
 
+    // All error flags set to false
     error_fName = false;
     error_lName = false;
     error_email = false;
     error_partySize = false;
     error_dateSelect = false;
 
+    // Establish values from form input
     const firstName = $("#firstNameInput").val();
     const email = $("#emailInput").val();
     const partySize = $("#partySize").val();
     const dateSelect = $("#dateSelect").val();
 
+    // Run Validation functions
     check_firstName();
     check_lastName();
     check_email();
     check_partySize();
     check_dateSelect();
 
+    // If all error flags == false => form submits - alery guest of successful reservation => clear form - - else return false
     if (
       error_fName == false &&
       error_lName == false &&
