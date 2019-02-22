@@ -1,25 +1,75 @@
-$(document).ready(function() {
+$(function() {
+  $("#fNameErr").hide();
+  $("#lNameErr").hide();
+  $("#emailErr").hide();
+  $("#zipCodeErr").hide();
+  $("#partySizeErr").hide();
+  $("#dateSelectErr").hide();
 
-  // Grab all input values from our form page...
-  const firstName = $(".firstNameInput").val().trim();
-  const lastName = $(".lastNameInput").val().trim();
-  const email = $(".emailInput").val().trim();
-  const freqDinerNum = $("freqDinerInput").val().trim();
-  const phoneNum = $(".phoneNumInput").val().trim();
-  const zipCode = $(".zipCodeInput").val().trim();
-  const dateSelection = $(".dateSelection").val().trim();
-  const partySize = $(".partySizeInput").val().trim();
-  const allergy = $(".allergyInput").val().trim();
-  const occasion = $(".occasionInput").val().trim();
+  const error_fName = false;
+  const error_lName = false;
+  const error_email = false;
+  const error_zipCode = false;
+  const error_partySize = false;
+  const error_dateSelect = false;
 
-  // Give the submit button life...
-  $("#submitBtn").on("click", function(event) {
-    event.preventDefault();
+  $("#firstNameInput").focusout(function() {
+    check_firstName();
+  });
 
-    if (firstName && lastName === "") {
-      alert("Please ")
+  $("#lastNameInput").focusout(function() {
+    check_lastName();
+  });
+
+  $("#emailInput").focusout(function() {
+    check_email();
+  });
+
+  $("#zipCode").focusout(function() {
+    check_zipCode();
+  });
+
+  $("#partySize").focusout(function() {
+    check_partySize();
+  });
+
+  $("dateSelect").focusout(function() {
+    check_dateSelect();
+  });
+
+  function check_firstName() {
+    const firstName_length = $("#firstnameInput").val.length;
+
+    if (firstName_length < 5) {
+      $("#fNameErr").html("Please Enter Your First Name");
+      $("#fNameErr").show();
+      error_fName = true;
+    } else {
+      $("fNameErr").hide();
     }
-  
+  }
 
+  function check_lastName() {
+    const lastName_length = $("#lastnameInput").val.length;
 
-}
+    if (lastName_length < 1) {
+      $("#lNameErr").html("Please Enter Your Last Name");
+      $("#lNameErr").show();
+      error_lName = true;
+    } else {
+      $("lNameErr").hide();
+    }
+  }
+
+  function check_email() {
+    const pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.{2,4}$/i);
+
+    if (pattern.test($("#emailInput").val())) {
+      $("#emailErr").html("Please Enter a Valid Email");
+      $("#emailErr").show();
+      error_email = true;
+    } else {
+      $("emailErr").hide();
+    }
+  }
+});

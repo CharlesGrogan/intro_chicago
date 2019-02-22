@@ -4,221 +4,269 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- font awesome CDN -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS stylesheet import -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Intro_Chicago</title>
   </head>
   <body>
-    <div class="container">
-    <div class="top-bar">
-      <div class="logo">Intro Chicago</div>
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">About Intro</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Reserve</a></li>
-        </ul>
-      </nav>
+    <!-- Hidden Gif Div -->
+    <div id="hidden-gif"></div>
+
+    <!-- Logo Container -->
+    <div class="containter logo-container">
+      <img
+        alt="intro chicago logo"
+        id="logo"
+        src="assets/images/Intro_Chicago_Logo.png"
+      />
     </div>
-    <div class="banner">
-      <div class="banner-text">
-        <div class="banner-text-items">
-          <h2>Banner Text Heading</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-            fugiat? Nobis molestias libero a, illo alias consequuntur? Error
-            incidunt est earum quidem voluptates facere deserunt repudiandae
-            nesciunt eligendi. Corrupti, doloremque!
-          </p>
+
+    <!-- Nav Bar -->
+    <nav class="nav-bar sticky">
+      <ul class="nav-bar-container">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Reserve</a></li>
+      </ul>
+    </nav>
+
+    <!-- Landing Page -->
+    <div class="landing-container">
+      <div class="landing-heading-container">
+        <h1>Exclusive Event Reserve your tickets now</h1>
+        <p>
+          ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iste
+          nam. Officia quidem ex ab esse perspiciatis, minima autem? Ipsa.
+        </p>
+        <br />
+        <a
+          type="button"
+          style="font-size: 18px; margin:1.5%"
+          class="btn"
+          href="#section2"
+          >Book Now!</a
+        >
+      </div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="bottom-container" id="section2">
+      <div class="form-container">
+        <h2 style="text-transform: uppercase">
+          Exclusive Access. Seating is Limited
+        </h2>
+        <!-- Form -->
+        <div class="form-section">
+          <form>
+            <!-- First Name Input -->
+            <div class="form-group">
+              <label for="firstNameInput">First Name</label>
+              <input
+                type="text"
+                class="form"
+                id="firstNameInput"
+                aria-describedby="firstNameInput"
+                placeholder="First Name (Required)"
+              />
+              <br />
+              <span id="fNameErr" style="color:red; font-weight:bold"
+                >hello</span
+              >
+            </div>
+
+            <!-- Last name Input -->
+            <div class="form-group">
+              <label for="lastNameInput">Last Name</label>
+              <input
+                type="text"
+                class="form"
+                id="lastNameInput"
+                aria-describedby="lastNameInput"
+                placeholder="Last Name (Required)"
+              />
+              <br />
+              <span id="lNameErr" style="color:red; font-weight:bold"
+                >hello</span
+              >
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="emailInput">Email address</label>
+              <input
+                type="email"
+                class="form"
+                id="emailInput"
+                aria-describedby="emailInput"
+                placeholder="Enter email (Required)"
+              />
+              <br />
+              <span id="emailErr" style="color:red; font-weight:bold"></span>
+            </div>
+
+            <!-- Zip Code Input -->
+            <div class="form-group">
+              <label for="zipCode">Zip Code</label>
+              <input
+                type="number"
+                class="form"
+                id="zipCode"
+                aria-describedby="zipCode"
+                placeholder="Zip Code (Required)"
+              />
+              <br />
+              <span id="zipCodeErr" style="color:red; font-weight:bold"></span>
+            </div>
+
+            <!-- Frequent Diner Number Input -->
+            <div class="form-group">
+              <label for="freqDinerNum">Frequent Diner Number</label>
+              <input
+                type="text"
+                class="form"
+                id="freqDinerNum"
+                aria-describedby="frequentDinerNumber"
+                placeholder="Frequent Diner  Number"
+              />
+            </div>
+            <br />
+
+            <!-- Party Size Input -->
+            <div class="form-group">
+              <label for="partySize">Number of Guests In Party</label>
+              <select class="form" id="partySize">
+                <option value="noOption">Number of Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+              <br />
+              <small id="callHelp" class="form-text"
+                >If you have more than 8 to your party please call us directly @
+                847.555.4929</small
+              >
+              <!-- <br /> -->
+              <span
+                id="partySizeErr"
+                style="color:red; font-weight:bold"
+              ></span>
+            </div>
+            <br />
+
+            <!-- Date Selection Input -->
+            <div class="form-group">
+              <label for="dateSelect">Select Date & Time</label>
+              <select class="form" id="dateSelect">
+                <option value="noChoice">Select a Time & Date</option>
+                <option value="Fri_Early"
+                  >Friday, March 1st, 2019 - 5:30pm</option
+                >
+                <option value="Fri_Late"
+                  >Friday, March 1st, 2019 - 9:00pm</option
+                >
+                <option value="Sat_Early"
+                  >Saturday, March 2nd, 2019 - 5:30pm</option
+                >
+                <option value="Sat-Late"
+                  >Saturday, March 2nd, 2019 - 9:00pm</option
+                >
+                <option value="Brunch"
+                  >Sunday, March 3rd, 2019 - 10:00am</option
+                >
+              </select>
+              <br />
+              <span
+                id="dateSelectErr"
+                style="color:red; font-weight:bold"
+              ></span>
+            </div>
+            <br />
+
+            <!-- Special Occasion Input -->
+            <div class="form-group">
+              <label for="specialOccasion"
+                >Celebrating a Special Occasion?</label
+              >
+              <select class="form" id="specialOccasion">
+                <option value="noChoice">Select Occasion</option>
+                <option value="noChoice">Anniversary</option>
+                <option value="noChoice">Birthday</option>
+                <option value="noChoice">Special Night on the Town</option>
+              </select>
+            </div>
+            <br />
+
+            <div class="form-group">
+              <label for="occasionDetails"
+                >Any Details you would like us to know?</label
+              >
+              <textarea class="form" id="occasionDetails" rows="1"></textarea>
+            </div>
+            <br />
+
+            <!-- Food Allergy Input -->
+            <div class="form-group">
+              <label for="allergens">Any Food Allergies?</label>
+              <textarea class="form" id="allergens" rows="1"></textarea>
+            </div>
+            <br />
+
+            <!-- Submit Button -->
+            <button type="submit" class="submitBtn btn">Book Now</button>
+          </form>
         </div>
       </div>
     </div>
-<div class="formContainer">
-    <div class="formSection">
-      <form class="form" name="tastingEvent" id="tastingEventForm">
-          <h3>Book now for this Exclusive event!</h3>
-        <label for="form-first-name"
-          >First Name 
-          <input
-            type="text"
-            id="form-first-name"
-            class="required"
-            placeholder="First Name (Required)"
-          />
-        </label>
 
-        <label for="form-last-name"
-          >Last Name 
-          <input
-            type="text"
-            id="form-last-name"
-            class="required"
-            placeholder="Last Name (Required)"
-          />
-        </label>
-<br/>
-        <label for="form-email-address"
-          >Email Address 
-          <input
-            type="text"
-            id="form-email-address"
-            class="required"
-            placeholder="Email Address (Required)"
-          />
-        </label>
-
-        <label for="form-phone-number"
-          >Phone number
-          <input
-            type="text"
-            id="form-phone-number"
-            placeholder="Phone Number"
-          />
-        </label>
-<br/>
-        <label for="form-freq-diner"
-          >Frequent Diner Number
-          <input
-            type="text"
-            id="form-freq-diner"
-            placeholder="Frequent Diner Number"
-          />
-        </label>
-
-        <label for="form-zip-code"
-          >Zip Code 
-          <input
-            type="text"
-            id="form-zip-code"
-            class="required"
-            placeholder="Zip Code (Required)"
-          />
-        </label>
-<br/>
-<br/>
-        <label for="form-date-selection">
-          Select the Date and Time of Your Dining Expereince
-          <select
-            id="date-selection"
-            class="required"
-            name="Dining Options"
-            required
+    <!-- Top Footer -->
+    <div class="footer footer-top">
+      <ul>
+        <li><a href="http://www.leye.com" target="_blank">LEYE</a></li>
+        <li>
+          <a href="https://www.leye.com/careers/" target="_blank">Employment</a>
+        </li>
+        <li>
+          <a href="http://www.leye.com/frequent-diner-club" target="_blank"
+            >Frequent Diner Club</a
           >
-            <option value="noChoice">Please Select A Time And Date</option>
-            <option value="noChoice">--------------</option>
-            <option value="Fri_Early">Friday, March 1st, 2019 - 5:30pm</option>
-            <option value="Fri_Late">Friday, March 1st, 2019 - 9:00pm</option>
-            <option value="noChoice">--------------</option>
-            <option value="Sat_Early">Saturday, March 2nd, 2019 - 5:30pm</option>
-            <option value="Sat-Late">Saturday, March 2nd, 2019 - 9:00pm</option>
-          </select>
-        </label>
-<br/>
-<br/>
-        <label for="form-guest-count">
-          Select How Many Guests In Your Party
-          <select id="partySize" class="required" name="Party Size" required>
-            <option value="noChoice">How Many In Your Party</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-          </select>
-          <p>
-            If you have more than 8 to your party please call us directly @
-            847.555.4929
-          </p>
-<br/>
-        </label>
-        <label for="form-allergy-awareness">
-          Any Allergies To Be Aware Of?
-            <textarea
-            name="allergies"
-            class="allergyInput"
-            cols="50"
-            rows="1"
-            placeholder="List any food allergens here..."
-          ></textarea>
-        </label>
-<br />
-<br/>
-        <label for="form-spec-occasion">
-          Celebrating A Special Occasion? Tell Us About It
-          <textarea
-            name="occasion"
-            class="occasionInput"
-            cols="50"
-            rows="1"
-            placeholder="Are You Celebrating A Special Event?"
-          ></textarea>
-        </label>
-          <br />
-          <input id="submitBtn" type="submit" value="Submit" />
-        </label>
-      </form>
+        </li>
+        <li>
+          <a href="http://www.leye.com/gift-cards" target="_blank"
+            >Gift Cards</a
+          >
+        </li>
+        <li>
+          <a href="http://www.leye.com/privacy-policy" target="_blank"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a href="http://www.leye.com/terms-of-use" target="_blank"
+            >Terms of Use</a
+          >
+        </li>
+      </ul>
     </div>
-    <!-- End FormContainer -->
-  </div>
 
-    <!-- Footer -->
-    <div class="footer-container">
-      <div class="footer footer-top">
-        <ul>
-          <li><a href="http://www.leye.com" target="_blank">LEYE</a></li>
-          <li>
-            <a href="https://www.leye.com/careers/" target="_blank"
-              >Employment</a
-            >
-          </li>
-          <li>
-            <a href="http://www.leye.com/frequent-diner-club" target="_blank"
-              >Frequent Diner Club</a
-            >
-          </li>
-          <li>
-            <a href="http://www.leye.com/gift-cards" target="_blank"
-              >Gift Cards</a
-            >
-          </li>
-          <li>
-            <a href="http://www.leye.com/privacy-policy" target="_blank"
-              >Privacy Policy</a
-            >
-          </li>
-          <li>
-            <a href="http://www.leye.com/terms-of-use" target="_blank"
-              >Terms of Use</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="footer footer-bottom">
-        <p>©2019 Intro_Chicago®. Lettuce Entertain You® Restaurant.</p>
-      </div>
+    <!-- Begin Bottom Footer -->
+    <div class="footer footer-bottom">
+      <p>©2019 Intro_Chicago®. Lettuce Entertain You® Restaurant.</p>
     </div>
-    
-    <!-- Close Container -->
-  </div>
-    <!-- Jquery CDN -->
+
+    <!-- jQuery CDN -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <!-- JavaScript Import -->
+
+    <!-- Import JavaScript -->
     <script src="./assets/javaScript/app.js"></script>
   </body>
 </html>
