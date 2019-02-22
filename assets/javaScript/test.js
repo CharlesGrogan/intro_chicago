@@ -59,7 +59,7 @@ $(function() {
 
   // Validate Email Address
   function check_email() {
-    const pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    const pattern = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/;
 
     if (pattern.test($("#emailInput").val())) {
       $("#emailErr").html("Please Enter a Valid Email");
@@ -119,11 +119,16 @@ $(function() {
       error_dateSelect == false &&
       error_partySize == false
     ) {
+      $("#reservationForm")[0].reset();
       return true;
     } else {
       return false;
     }
   });
+});
+
+$(window).load(function() {
+  $("#hidden-gif").fadeOut();
 });
 
 // const first_name = $("#firstNameInput").val();
