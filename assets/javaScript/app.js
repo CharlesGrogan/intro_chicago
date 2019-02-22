@@ -40,7 +40,7 @@ $(function() {
   function check_firstName() {
     const firstName_length = $("#firstnameInput").val.length;
 
-    if (firstName_length < 5) {
+    if (firstName_length < 1) {
       $("#fNameErr").html("Please Enter Your First Name");
       $("#fNameErr").show();
       error_fName = true;
