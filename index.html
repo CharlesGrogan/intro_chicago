@@ -8,14 +8,6 @@
     <title>Intro_Chicago</title>
   </head>
   <body>
-    <!-- Hidden Gif Div -->
-    <div id="hidden-gif">
-      <img
-        src="./assets/images/opening_gif.gif"
-        alt="gif of photos of tasting"
-      />
-    </div>
-
     <!-- Logo Container -->
     <div class="containter logo-container">
       <img
@@ -26,7 +18,7 @@
     </div>
 
     <!-- Nav Bar -->
-    <nav class="nav-bar sticky">
+    <nav class="nav-bar">
       <ul class="nav-bar-container">
         <li><a href="#">Menu</a></li>
         <li><a href="#">Team</a></li>
@@ -35,6 +27,14 @@
         <li><a href="#">Reserve</a></li>
       </ul>
     </nav>
+
+    <!-- Hidden Gif Div -->
+    <!-- <div id="hidden-gif">
+      <img
+        src="./assets/images/opening_gif.gif"
+        alt="gif of photos of tasting"
+      />
+    </div> -->
 
     <!-- Landing Page -->
     <div class="landing-container">
@@ -49,14 +49,21 @@
           type="button"
           style="font-size: 18px; margin:1.5%"
           class="btn"
-          href="#section2"
+          href="#formLogo"
           >Book Now!</a
         >
       </div>
     </div>
-
+    <!-- Logo Container -->
+    <div class="containter logo-container" id="formLogo">
+      <img
+        alt="intro chicago logo"
+        id="logo"
+        src="assets/images/Intro_Chicago_Logo.png"
+      />
+    </div>
     <!-- Form Container -->
-    <div class="bottom-container" id="section2">
+    <div class="bottom-container">
       <div class="form-container">
         <h2 style="text-transform: uppercase">
           Exclusive Access. Seating is Limited
@@ -67,6 +74,7 @@
             <!-- First Name Input -->
             <div class="form-group">
               <label for="firstNameInput">First Name</label>
+              <br />
               <input
                 type="text"
                 class="form"
@@ -75,12 +83,13 @@
                 placeholder="First Name (Required)"
               />
               <br />
-              <span id="fNameErr" style="color:red; font-weight:bold"></span>
+              <span id="fNameErr" style="color:black; font-weight:bold"></span>
             </div>
 
             <!-- Last name Input -->
             <div class="form-group">
               <label for="lastNameInput">Last Name</label>
+              <br />
               <input
                 type="text"
                 class="form"
@@ -89,12 +98,13 @@
                 placeholder="Last Name (Required)"
               />
               <br />
-              <span id="lNameErr" style="color:red; font-weight:bold"></span>
+              <span id="lNameErr" style="color:black; font-weight:bold"></span>
             </div>
 
             <!-- Email Input -->
             <div class="form-group">
               <label for="emailInput">Email address</label>
+              <br />
               <input
                 type="email"
                 class="form"
@@ -103,12 +113,13 @@
                 placeholder="Enter email (Required)"
               />
               <br />
-              <span id="emailErr" style="color:red; font-weight:bold"></span>
+              <span id="emailErr" style="color:black; font-weight:bold"></span>
             </div>
 
             <!-- Zip Code Input -->
             <div class="form-group">
               <label for="zipCode">Zip Code</label>
+              <br />
               <input
                 type="text"
                 class="form"
@@ -121,6 +132,7 @@
             <!-- Frequent Diner Number Input -->
             <div class="form-group">
               <label for="freqDinerNum">Frequent Diner Number</label>
+              <br />
               <input
                 type="text"
                 class="form"
@@ -129,95 +141,103 @@
                 placeholder="Frequent Diner  Number"
               />
             </div>
-            <br />
 
             <!-- Party Size Input -->
             <div class="form-group">
               <label for="partySize">Number of Guests In Party</label>
+              <br />
               <select class="form" id="partySize">
                 <option value="noValue">Number of Guests</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
               </select>
               <br />
+              <span
+                id="partySizeErr"
+                style="color:black; font-weight:bold"
+              ></span>
               <small id="callHelp" class="form-text"
                 >If you have more than 8 to your party please call us directly @
                 847.555.4929</small
               >
-              <!-- <br /> -->
-              <span
-                id="partySizeErr"
-                style="color:red; font-weight:bold"
-              ></span>
             </div>
-            <br />
 
             <!-- Date Selection Input -->
             <div class="form-group">
               <label for="dateSelect">Select Date & Time</label>
+              <br />
               <select class="form" id="dateSelect">
                 <option value="noValue">Select a Time & Date</option>
-                <option value="Fri_Early"
-                  >Friday, March 1st, 2019 - 5:30pm</option
+                <option value="Friday, March 1st, 2019 @ 5:30pm"
+                  >Friday, March 1st, 2019 @ 5:30pm</option
                 >
-                <option value="Fri_Late"
-                  >Friday, March 1st, 2019 - 9:00pm</option
+                <option value="Friday, March 1st, 2019 @ 9:00pm"
+                  >Friday, March 1st, 2019 @ 9:00pm</option
                 >
-                <option value="Sat_Early"
-                  >Saturday, March 2nd, 2019 - 5:30pm</option
+                <option value="Saturday, March 2nd, 2019 @ 5:30pm"
+                  >Saturday, March 2nd, 2019 @ 5:30pm</option
                 >
-                <option value="Sat-Late"
-                  >Saturday, March 2nd, 2019 - 9:00pm</option
+                <option value="Saturday, March 2nd, 2019 @ 9:00pm"
+                  >Saturday, March 2nd, 2019 @ 9:00pm</option
                 >
-                <option value="Brunch"
+                <option value="Sunday, March 3rd, 2019 - 10:00am"
                   >Sunday, March 3rd, 2019 - 10:00am</option
                 >
               </select>
               <br />
               <span
                 id="dateSelectErr"
-                style="color:red; font-weight:bold"
+                style="color: black; font-weight:bold"
               ></span>
             </div>
-            <br />
 
             <!-- Special Occasion Input -->
             <div class="form-group">
               <label for="specialOccasion"
                 >Celebrating a Special Occasion?</label
               >
+              <br />
               <select class="form" id="specialOccasion">
                 <option value="noChoice">Select Occasion</option>
-                <option value="noChoice">Anniversary</option>
-                <option value="noChoice">Birthday</option>
-                <option value="noChoice">Special Night on the Town</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="birthday">Birthday</option>
+                <option value="specNight">Special Night on the Town</option>
               </select>
             </div>
-            <br />
 
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="occasionDetails"
                 >Any Details you would like us to know?</label
               >
-              <textarea class="form" id="occasionDetails" rows="1"></textarea>
-            </div>
-            <br />
+              <br />
+              <textarea
+                class="form"
+                id="occasionDetails"
+                cols="25"
+                rows="1"
+              ></textarea>
+            </div> -->
 
             <!-- Food Allergy Input -->
             <div class="form-group">
               <label for="allergens">Any Food Allergies?</label>
-              <textarea class="form" id="allergens" rows="1"></textarea>
+              <br />
+              <textarea
+                class="form"
+                id="allergens"
+                cols="25"
+                rows="1"
+              ></textarea>
             </div>
-            <br />
 
             <!-- Submit Button -->
-            <button type="submit" id="submit" class="submitBtn btn">
+            <button type="submit" id="submit" class="submitBtn">
               Book Now
             </button>
           </form>

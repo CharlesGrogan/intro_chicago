@@ -1,3 +1,7 @@
+// $(window).load(function() {
+//   $("#hidden-gif").fadeOut();
+// });
+
 $(function() {
   //  Hide all Error Messages
   $("#fNameErr").hide();
@@ -106,6 +110,11 @@ $(function() {
     error_partySize = false;
     error_dateSelect = false;
 
+    const firstName = $("#firstNameInput").val();
+    const email = $("#emailInput").val();
+    const partySize = $("#partySize").val();
+    const dateSelect = $("#dateSelect").val();
+
     check_firstName();
     check_lastName();
     check_email();
@@ -119,6 +128,9 @@ $(function() {
       error_dateSelect == false &&
       error_partySize == false
     ) {
+      alert(
+        `Thank you ${firstName} for booking your reservation for ${partySize} guests on ${dateSelect} at Intro_Chicago. A confirmation email has been sent to ${email}!`
+      );
       $("#reservationForm")[0].reset();
       return true;
     } else {
@@ -126,54 +138,3 @@ $(function() {
     }
   });
 });
-
-$(window).load(function() {
-  $("#hidden-gif").fadeOut();
-});
-
-// const first_name = $("#firstNameInput").val();
-// const last_name = $("#lastNameInput").val();
-// const email = $("#emailInput").val();
-// const partySize = $("#partySize").val();
-
-// console.log(last_name);
-// console.log(email);
-// console.log(first_name);
-// console.log(partySize);
-// console.log(dateSelect);
-
-// const dateSelect = $("#dateSelect").val();
-// const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-//     if (first_name == "") {
-//       $("#fNameErr").html("Please Enter Your First Name");
-//     } else {
-//       return false;
-//     }
-
-//     if (last_name == "") {
-//       $("#lNameErr").html("Please Enter Your Last Name");
-//     } else {
-//       return false;
-//     }
-
-//     if (pattern.test(email)) {
-//       $("#emailErr").html("Please Enter a Valid Email");
-//     } else {
-//       return false;
-//     }
-
-//     if (partySize == "noValue") {
-//       $("#partySizeErr").html("Please Select the Number of Guests");
-//     } else {
-//       return false;
-//     }
-
-//     if (dateSelect == "noValue") {
-//       $("#dateSelectErr").html("Please Select a Valid Date");
-//     } else {
-//       return false;
-//     }
-
-//     $("#reservationForm").trigger("reset");
-//   });
-// });
