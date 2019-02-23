@@ -20,11 +20,11 @@
     <!-- Nav Bar -->
     <nav class="nav-bar">
       <ul class="nav-bar-container">
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Reserve</a></li>
+        <li id="menu"><a href="#">Menu</a></li>
+        <li id="team"><a href="#">Team</a></li>
+        <li id="gallery"><a href="#">Gallery</a></li>
+        <li id="contact"><a href="#">Contact</a></li>
+        <li id="reserve"><a href="#">Reserve</a></li>
       </ul>
     </nav>
 
@@ -45,13 +45,15 @@
           nam. Officia quidem ex ab esse perspiciatis, minima autem? Ipsa.
         </p>
         <br />
-        <a
-          type="button"
-          style="font-size: 18px; margin:1.5%"
-          class="btn"
-          href="#formLogo"
-          >Book Now!</a
-        >
+        <div class="buttonDiv">
+          <a
+            type="button"
+            style="font-size: 18px; margin:1.5%"
+            class="btn"
+            href="#formLogo"
+            >Reserve Now!</a
+          >
+        </div>
       </div>
     </div>
     <!-- Logo Container -->
@@ -77,7 +79,8 @@
               <br />
               <input
                 type="text"
-                class="form"
+                size="30"
+                class="form-control"
                 id="firstNameInput"
                 aria-describedby="firstNameInput"
                 placeholder="First Name (Required)"
@@ -93,6 +96,7 @@
               <input
                 type="text"
                 class="form"
+                size="30"
                 id="lastNameInput"
                 aria-describedby="lastNameInput"
                 placeholder="Last Name (Required)"
@@ -108,6 +112,7 @@
               <input
                 type="email"
                 class="form"
+                size="30"
                 id="emailInput"
                 aria-describedby="emailInput"
                 placeholder="Enter email (Required)"
@@ -124,6 +129,7 @@
                 type="text"
                 class="form"
                 id="zipCode"
+                size="25"
                 aria-describedby="zipCode"
                 placeholder="Zip Code"
               />
@@ -136,9 +142,10 @@
               <input
                 type="text"
                 class="form"
+                size="30"
                 id="freqDinerNum"
                 aria-describedby="frequentDinerNumber"
-                placeholder="Frequent Diner  Number"
+                placeholder="Frequent Diner Number"
               />
             </div>
 
@@ -162,10 +169,6 @@
                 id="partySizeErr"
                 style="color:black; font-weight:bold"
               ></span>
-              <small id="callHelp" class="form-text"
-                >If you have more than 8 to your party please call us directly @
-                847.555.4929</small
-              >
             </div>
 
             <!-- Date Selection Input -->
@@ -231,15 +234,23 @@
               <textarea
                 class="form"
                 id="allergens"
-                cols="25"
+                placeholder="Food Allergies?"
+                cols="30"
                 rows="1"
               ></textarea>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" id="submit" class="submitBtn">
-              Book Now
-            </button>
+            <div class="form-group">
+              <button type="submit" id="submit" class="submitBtn">
+                Reserve Now!
+              </button>
+              <br />
+              <small id="callHelp" class="form-text"
+                >If you have more than 8 to your party please call us directly @
+                847.555.4929</small
+              >
+            </div>
           </form>
         </div>
       </div>
