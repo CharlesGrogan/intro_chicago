@@ -1,8 +1,24 @@
-// $(window).load(function() {
-//   $("#hidden-gif").fadeOut();
-// });
+// $(document).ready(function() {
+//   $("#hidden-gif").hide();
+//   //hide all divs
+//   $(".toggle").hide();
 
-$(function() {
+//   $("#hidden-gif").show();
+//   timer = 0;
+//   const intervalId = setInterval(() => {
+//     timer++;
+
+//     //We know the gif takes ~5 sec to run
+//     if (timer >= 6) {
+//       $("#hidden-gif").hide();
+//       $(".toggle").show();
+//       clearInterval(intervalId);
+//     }
+//   }, 900);
+// });
+loadPage();
+
+const loadPage = () => {
   //  Hide all Error Messages
   $("#fNameErr").hide();
   $("#lNameErr").hide();
@@ -63,9 +79,13 @@ $(function() {
 
   // Validate Email Address
   function check_email() {
-    const pattern = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/;
-
-    if (pattern.test($("#emailInput").val())) {
+    const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const isValidEmail = pattern.test(
+      $("#emailInput")
+        .val()
+        .toLowerCase()
+    );
+    if (!isValidEmail) {
       $("#emailErr").html("Please Enter a Valid Email");
       $("#emailErr").show();
       error_email = true;
@@ -133,7 +153,9 @@ $(function() {
       error_partySize == false
     ) {
       alert(
-        `Thank you ${firstName} for booking your reservation for ${partySize} guests on ${dateSelect} at Intro_Chicago. A confirmation email has been sent to ${email}!`
+        `Thank you ${firstName} for booking your reservation for ${partySize} guests on ${dateSelect}. 
+The Team at Intro Chicago is anticipating your arrival.
+A confirmation email has been sent to ${email}.`
       );
       $("#reservationForm")[0].reset();
       return true;
@@ -141,4 +163,4 @@ $(function() {
       return false;
     }
   });
-});
+};
