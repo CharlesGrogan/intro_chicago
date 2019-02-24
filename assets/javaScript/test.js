@@ -1,22 +1,23 @@
-// $(document).ready(function() {
-//   $("#hidden-gif").hide();
-//   //hide all divs
-//   $(".toggle").hide();
+$(document).ready(function() {
+  // $("#hidden-gif").hide();
+  // //hide all divs
+  // $(".toggle").hide();
 
-//   $("#hidden-gif").show();
-//   timer = 0;
-//   const intervalId = setInterval(() => {
-//     timer++;
+  // $("#hidden-gif").show();
+  // timer = 0;
+  // const intervalId = setInterval(() => {
+  //   timer++;
 
-//     //We know the gif takes ~5 sec to run
-//     if (timer >= 6) {
-//       $("#hidden-gif").hide();
-//       $(".toggle").show();
-//       clearInterval(intervalId);
-//     }
-//   }, 900);
-// });
-loadPage();
+  //   //We know the gif takes ~5 sec to run
+  //   if (timer > 5.5) {
+  //     $("#hidden-gif").hide();
+  //     $(".toggle").show();
+  //     clearInterval(intervalId);
+
+  //   }
+  // }, 900);
+  loadPage();
+});
 
 const loadPage = () => {
   //  Hide all Error Messages

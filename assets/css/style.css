@@ -66,13 +66,13 @@ body {
   color: white;
   cursor: pointer;
   padding: 0.72em 0.5em;
-  border-radius: 25%;
+  border-radius: 10%;
   text-transform: uppercase;
   font-style: italic;
 }
 
 .nav-bar-container li a:hover {
-  background-color: #00441c;
+  background-color: #99b646;
   box-shadow: white 1px 1px;
 }
 
@@ -106,6 +106,7 @@ body {
   color: white;
   padding-bottom: 1%;
   padding: 1%;
+  font-style: italic;
 }
 
 .btn {
@@ -120,6 +121,22 @@ body {
   margin: 5em;
   text-decoration: none;
   border-radius: 10%;
+  font-style: italic;
+}
+
+.submitBtn {
+  background-color: rgb(3, 83, 3);
+  /* border: snow 1px solid; */
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  /* margin: 5em; */
+  text-decoration: none;
+  border-radius: 10%;
+  font-style: italic;
 }
 
 .buttonDiv {
@@ -127,9 +144,11 @@ body {
   padding-top: 2%;
 }
 
-.btn:hover {
-  background-color: rgba(3, 83, 3, 0.759);
+.btn:hover,
+.submitBtn:hover {
+  background-color: #99b646;
   box-shadow: rgb(84, 84, 252) 1px 1px;
+  color: rgb(3, 83, 3);
 }
 .bottom-container {
   background-image: url("../images/form_background.jpeg");
@@ -144,8 +163,8 @@ body {
 
 #formLogo,
 .logo-container {
-  border-top: 2px ridge green;
-  border-bottom: 2px ridge green;
+  border-top: 2px ridge #99b646;
+  border-bottom: 2px ridge #99b646;
 }
 
 .form-container {
@@ -155,9 +174,9 @@ body {
   /* flex: 1; */
   flex-basis: 55%;
   border: 5px ridge black;
-  border-color: #2a8f40;
+  border-color: #99b646;
   background-color: #fab380d5;
-  text-shadow: 2px 2px #2a8f40;
+  text-shadow: 2px 2px #99b646;
   height: 100%;
   /* flex-flow: row wrap; */
   box-shadow: 2px 2px black, 3px 3px rgba(2, 124, 2, 0.836),
@@ -178,16 +197,18 @@ h2 {
 
 .form-group {
   text-align: center;
-  padding: 1%;
+  padding: 0.25em;
   flex-grow: 1;
   font-size: 18px;
+  font-style: italic;
 }
 
 .form-group > input,
-.form-group > textarea {
-  box-shadow: 0 0 30px rgba(40, 43, 40, 0.849), 0 0 10px rgba(67, 90, 67, 0.836);
+.form-group > textarea,
+.form-group > select {
+  box-shadow: 0 0 30px #99b646, 0 0 10px rgba(67, 90, 67, 0.836);
   line-height: 1.5em;
-  margin-top: 1%;
+  margin-top: 0.25em;
 }
 
 .form-group > label {
@@ -197,6 +218,7 @@ h2 {
 
 .form-group > :placeholder-shown {
   text-align: center;
+  font-style: italic;
 }
 
 #submit {
@@ -215,9 +237,10 @@ h2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-flow: row wrap;
-  background-color: rgba(3, 83, 3, 0.75);
+  background-color: #99b646;
   -ms-flex-flow: row wrap;
   padding: 1%;
+  font-style: italic;
 }
 
 .footer-top ul li a {
@@ -226,7 +249,7 @@ h2 {
 }
 
 .footer-top ul li a:hover {
-  background-color: #2a8f40;
+  background-color: #99b646;
   box-shadow: white 1px 1px;
 }
 
@@ -238,4 +261,5 @@ h2 {
   background-color: rgba(3, 83, 3);
   text-align: center;
   padding: 1%;
+  font-style: italic;
 }
