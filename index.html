@@ -18,7 +18,7 @@
     </div>
 
     <!-- Nav Bar -->
-    <nav class="nav-bar toggle">
+    <nav class="nav-bar toggle" id="top">
       <ul class="nav-bar-container">
         <li id="menu"><a href="#">Menu</a></li>
         <li id="team"><a href="#">Team</a></li>
@@ -40,25 +40,27 @@
     <!-- Landing Page -->
     <div class="landing-container toggle">
       <div class="landing-heading-container">
-        <h1>Reserve Your Tickets Now</h1>
+        <h1>Reserve Your Seat Now</h1>
+        <p class="introP">
+          Lettuce Entertain You is Proud to Present its Newest Dining
+          Experience! Intro Chicago is Here to Change Your Preception of Fine
+          Dining
+        </p>
+        <p style="padding:0">~</p>
         <p>
-          ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, iste
-          nam. Officia quidem ex ab esse perspiciatis, minima autem? Ipsa.
+          Now is Your Chance to Book Exclusive Seating for our Grand Opening
+          Weekend Tasting Menu
+          <br />
+          Click the Button Below to Book your Reservation Now!
         </p>
         <br />
         <div class="buttonDiv">
-          <a
-            type="button"
-            style="font-size: 18px; margin:1.5%"
-            class="btn"
-            href="#formLogo"
-            >RESERVE NOW!</a
-          >
+          <a type="button" class="btn" href="#mid-logo">RESERVE NOW!</a>
         </div>
       </div>
     </div>
     <!-- Logo Container -->
-    <div class="containter logo-container toggle" id="formLogo">
+    <div class="containter logo-container mid-logo" id="mid-logo">
       <img
         alt="intro chicago logo"
         id="logo"
@@ -69,7 +71,7 @@
     <div class="bottom-container toggle">
       <div class="form-container">
         <h2 style="text-transform: uppercase">
-          Exclusive Tasting Event
+          Exclusive Event Registration
         </h2>
         <!-- Form -->
         <div class="form-section">
@@ -154,8 +156,13 @@
             <div class="form-group">
               <label for="partySize">Number of Guests In Party</label>
               <br />
-              <select class="form" id="partySize">
-                <option value="noValue">Number of Guests</option>
+              <select
+                style="text-align-last:center"
+                class="form"
+                id="partySize"
+                aria-placeholder="Number of Guests"
+              >
+                <option value="noValue"> Number of Guests</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
@@ -174,9 +181,13 @@
 
             <!-- Date Selection Input -->
             <div class="form-group">
-              <label for="dateSelect">Select Date & Time</label>
+              <label for="dateSelect"> Select Date & Time</label>
               <br />
-              <select class="form" id="dateSelect">
+              <select
+                style="text-align-last:center"
+                class="form"
+                id="dateSelect"
+              >
                 <option value="noValue">Select a Time & Date</option>
                 <option value="Friday, March 1st, 2019 @ 5:30pm"
                   >Friday, March 1st, 2019 @ 5:30pm</option
@@ -207,8 +218,12 @@
                 >Celebrating a Special Occasion?</label
               >
               <br />
-              <select class="form" id="specialOccasion">
-                <option value="noChoice">Select Occasion</option>
+              <select
+                style="text-align-last:center"
+                class="form"
+                id="specialOccasion"
+              >
+                <option value="noChoice"> Select Occasion</option>
                 <option value="anniversary">Anniversary</option>
                 <option value="birthday">Birthday</option>
                 <option value="specNight">Special Night on the Town</option>
@@ -243,8 +258,13 @@
 
             <!-- Submit Button -->
             <div class="form-group">
-              <button type="submit" id="submit" class="submitBtn">
-                Reserve Now!
+              <button
+                type="submit"
+                id="submit"
+                class="submitBtn"
+                style="font-size: 18px; margin:1.5%"
+              >
+                RESERVE NOW!
               </button>
               <br />
               <small id="callHelp" class="form-text"
@@ -260,28 +280,34 @@
     <!-- Top Footer -->
     <div class="footer footer-top toggle">
       <ul>
-        <li><a href="http://www.leye.com" target="_blank">LEYE</a></li>
         <li>
-          <a href="https://www.leye.com/careers/" target="_blank">Employment</a>
+          <a href="http://www.leye.com" target="_blank"
+            >LETTUCE ENTERTAIN YOU®</a
+          >
+        </li>
+        <li>
+          <a href="https://www.leye.com/careers/" target="_blank"
+            >EMPLOYMENT
+          </a>
         </li>
         <li>
           <a href="http://www.leye.com/frequent-diner-club" target="_blank"
-            >Frequent Diner Club</a
-          >
+            >FREQUENT DINER CLUB
+          </a>
         </li>
         <li>
           <a href="http://www.leye.com/gift-cards" target="_blank"
-            >Gift Cards</a
-          >
+            >LETTUCE ENTERTAIN YOU® GIFT CARDS
+          </a>
         </li>
         <li>
           <a href="http://www.leye.com/privacy-policy" target="_blank"
-            >Privacy Policy</a
+            >PRIVACY POLICY</a
           >
         </li>
         <li>
           <a href="http://www.leye.com/terms-of-use" target="_blank"
-            >Terms of Use</a
+            >TERMS OF USE</a
           >
         </li>
       </ul>
@@ -289,7 +315,12 @@
 
     <!-- Begin Bottom Footer -->
     <div class="footer footer-bottom toggle">
-      <p>©2019 Intro_Chicago®. Lettuce Entertain You® Restaurant.</p>
+      <p style="font-style: italic">
+        ©2019 INTRO CHICAGO®
+      </p>
+      <p style="font-style: italic">
+        LETTUCE ENTERTAIN YOU® ENTERPRISES, INC
+      </p>
     </div>
 
     <!-- jQuery CDN -->
