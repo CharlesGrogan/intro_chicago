@@ -41,8 +41,6 @@ body {
   height: 5em;
 }
 
-/* @media all and (max-width: ) */
-
 .nav-bar-container {
   overflow: hidden;
   background-color: rgb(3, 83, 3);
@@ -91,14 +89,12 @@ body {
   align-items: center;
   text-align: center;
   padding-top: 10%;
-  /* width: 50%; */
 }
 
 .landing-heading-container > h1 {
   text-transform: uppercase;
   font-size: 40px;
   color: white;
-  /* padding: 1%; */
   text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
     0 0 10px rgba(2, 124, 2, 0.836);
   font-style: italic;
@@ -107,8 +103,8 @@ body {
 .landing-heading-container > p {
   font-size: 18px;
   color: white;
-  padding-bottom: 1%;
-  padding: 1%;
+  /* padding-bottom: 1%; */
+  /* padding: 1%; */
   font-style: italic;
   text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
     0 0 10px rgba(2, 124, 2, 0.836);
@@ -225,11 +221,18 @@ h2 {
   width: 55%;
   text-align: center;
   font-size: 15px;
+  border: none;
   font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgba(3, 83, 3, 0.25);
+  color: white; */
 }
 
 .form-group > label {
   /* text-shadow: 0 0 30px rgba(3, 83, 3, 0.849), 0 0 10px rgba(2, 124, 2, 0.836); */
+  color: black;
+}
+
+.placeholder {
   color: black;
 }
 
@@ -262,6 +265,7 @@ h2 {
   color: white;
   text-decoration: none;
   text-shadow: 4px 4px 10px black;
+  padding: 1em;
 }
 
 .footer-top ul li a:hover {
@@ -269,7 +273,9 @@ h2 {
   box-shadow: white 1px 1px;
   box-shadow: white 1px 1px;
   border-radius: 50px 50px 50px 50px;
-  padding: 0.75em;
+  padding: 0.45em;
+  /* padding-left: 0.25em;
+  padding-right: 0.25em; */
   text-shadow: 4px 4px 10px black;
 }
 
