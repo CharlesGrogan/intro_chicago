@@ -31,7 +31,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  /* border: 1px black solid; */
+  border: 1px black solid;
   height: 100%;
   flex: 1;
 }
@@ -47,8 +47,8 @@ body {
   overflow: hidden;
   background-color: rgb(3, 83, 3);
   display: flex;
-  /* border-top: 2px black inset; */
-  border-bottom: 2px black inset;
+  border-top: 2px black solid;
+  border-bottom: 1px white solid;
   justify-content: space-evenly;
   list-style: none;
   flex: 1;
@@ -74,6 +74,8 @@ body {
 .nav-bar-container li a:hover {
   background-color: #99b646;
   box-shadow: white 1px 1px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 0.75em;
 }
 
 .landing-container {
@@ -90,15 +92,16 @@ body {
   text-align: center;
   padding-top: 10%;
   /* width: 50%; */
-  text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
-    0 0 10px rgba(2, 124, 2, 0.836);
 }
 
 .landing-heading-container > h1 {
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 40px;
   color: white;
-  padding: 1%;
+  /* padding: 1%; */
+  text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
+    0 0 10px rgba(2, 124, 2, 0.836);
+  font-style: italic;
 }
 
 .landing-heading-container > p {
@@ -107,13 +110,16 @@ body {
   padding-bottom: 1%;
   padding: 1%;
   font-style: italic;
+  text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
+    0 0 10px rgba(2, 124, 2, 0.836);
+  line-height: 1.5;
 }
 
 .btn {
   background-color: rgb(3, 83, 3);
-  /* border: snow 1px solid; */
+  border: snow 1px solid;
   color: white;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   font-size: 18px;
   font-weight: 200;
@@ -122,21 +128,24 @@ body {
   text-decoration: none;
   border-radius: 10%;
   font-style: italic;
+  border-radius: 50px 50px 50px 50px;
+  text-shadow: 4px 4px 10px black;
 }
 
 .submitBtn {
   background-color: rgb(3, 83, 3);
-  /* border: snow 1px solid; */
+  border: snow 1px solid;
   color: white;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   font-size: 18px;
   font-weight: 200;
   cursor: pointer;
   /* margin: 5em; */
   text-decoration: none;
-  border-radius: 10%;
+  border-radius: 50px 50px 50px 50px;
   font-style: italic;
+  text-shadow: 4px 4px 10px black;
 }
 
 .buttonDiv {
@@ -147,7 +156,7 @@ body {
 .btn:hover,
 .submitBtn:hover {
   background-color: #99b646;
-  box-shadow: rgb(84, 84, 252) 1px 1px;
+  /* box-shadow: rgb(84, 84, 252) 1px 1px; */
   color: rgb(3, 83, 3);
 }
 .bottom-container {
@@ -173,10 +182,10 @@ body {
   color: white;
   /* flex: 1; */
   flex-basis: 55%;
-  border: 5px ridge black;
+  border: 5px black ridge;
   border-color: #99b646;
-  background-color: #fab380d5;
-  text-shadow: 2px 2px #99b646;
+  background-color: #b1adabd5;
+  /* text-shadow: 2px 2px #99b646; */
   height: 100%;
   /* flex-flow: row wrap; */
   box-shadow: 2px 2px black, 3px 3px rgba(2, 124, 2, 0.836),
@@ -191,8 +200,10 @@ h2 {
   padding-top: 1em;
   padding-bottom: 0.25em;
   text-align: center;
-  text-shadow: 7px 7px 10px black, 0 0 45px rgba(3, 83, 3, 0.849),
-    0 0 10px rgba(2, 124, 2, 0.836);
+  text-shadow: 4px 4px 7px black;
+}
+.form-group > select > option {
+  text-align: center;
 }
 
 .form-group {
@@ -206,9 +217,15 @@ h2 {
 .form-group > input,
 .form-group > textarea,
 .form-group > select {
-  box-shadow: 0 0 30px #99b646, 0 0 10px rgba(67, 90, 67, 0.836);
+  /* box-shadow: 0 0 30px #99b646, 0 0 10px rgba(67, 90, 67, 0.836); */
   line-height: 1.5em;
   margin-top: 0.25em;
+  border-radius: 50px 50px 50px 50px;
+  padding: 7px;
+  width: 55%;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-group > label {
@@ -221,10 +238,8 @@ h2 {
   font-style: italic;
 }
 
-#submit {
-  padding: 1.5%;
-  /* margin-top: 1%; */
-  margin-bottom: 1%;
+.footer {
+  border-top: 1px white solid;
 }
 
 .footer-top ul {
@@ -246,11 +261,16 @@ h2 {
 .footer-top ul li a {
   color: white;
   text-decoration: none;
+  text-shadow: 4px 4px 10px black;
 }
 
 .footer-top ul li a:hover {
-  background-color: #99b646;
+  background-color: rgba(3, 83, 3);
   box-shadow: white 1px 1px;
+  box-shadow: white 1px 1px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 0.75em;
+  text-shadow: 4px 4px 10px black;
 }
 
 .footer-bottom {
@@ -262,4 +282,5 @@ h2 {
   text-align: center;
   padding: 1%;
   font-style: italic;
+  text-shadow: 4px 4px 7px black;
 }
