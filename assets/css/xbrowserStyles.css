@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  /* margin: 10px; */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-style: italic;
+}
+
+/* #hidden-gif {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+} */
+
+/* #introGif {
+  box-shadow: 5px 5px green, 0 0 rgb(29, 214, 29);
+  border: 1px white solid;
+} */
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px black solid;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+#logo {
+  width: 18%;
+  height: 5%;
+}
+
+.nav-bar-container {
+  /* overflow: hidden; */
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  background-color: rgb(3, 83, 3);
+  border-top: 2px black solid;
+  border-bottom: 1px white solid;
+  /* justify-content: space-around; Needed for IE work around `space-evenly` not supported */
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  list-style: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  padding: 1%;
+  /* position: fixed; */
+}
+
+.nav-bar-container li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.72em 0.5em;
+  border-radius: 10%;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.nav-bar-container li a:hover {
+  background-color: #99b646;
+  -webkit-box-shadow: white 1px 1px;
+  box-shadow: white 1px 1px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 0.75em;
+  text-shadow: black 1px 1px;
+}
+
+.landing-container {
+  /* display: flex; */
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/banner.jpeg");
+  height: 550px;
+}
+
+.landing-heading-container {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.landing-heading-container > h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+  font-weight: 100;
+  text-shadow: 3px 3px black;
+  font-style: italic;
+  padding-bottom: 0.1%;
+}
+
+.landing-heading-container > p {
+  font-size: 24px;
+  color: white;
+  /* padding-bottom: 1%; */
+  /* padding: 1%; */
+  font-style: italic;
+  text-shadow: 2px 2px black, 3px 3px rgba(3, 83, 3, 0.849);
+  line-height: 1.5;
+}
+.landing-heading-container > .nameAnnouce {
+  font-size: 50px;
+  font-weight: 200;
+  text-shadow: 3px 3px black;
+}
+
+.btn,
+.submitBtn {
+  background-color: rgb(3, 83, 3);
+  border: snow 1px solid;
+  color: white;
+  padding: 22px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  cursor: pointer;
+  margin: 5em;
+  text-decoration: none;
+  border-radius: 10%;
+  border-radius: 50px 50px 50px 50px;
+  text-shadow: 4px 4px 10px black;
+}
+
+.submitBtn {
+  margin: 0.1em;
+}
+
+.buttonDiv {
+  margin: 1%;
+  padding-top: 2%;
+}
+
+.btn:hover,
+.submitBtn:hover {
+  background-color: #99b646;
+  /* box-shadow: rgb(84, 84, 252) 1px 1px; */
+  text-shadow: white 1px 1px;
+  color: rgb(3, 83, 3);
+}
+.bottom-container {
+  background-image: url("../images/form_background.jpeg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#formLogo,
+.logo-container {
+  border-top: 2px ridge #99b646;
+  border-bottom: 2px ridge #99b646;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: white;
+  /* flex: 1; */
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%;
+  border: 10px black ridge;
+  border-color: rgb(3, 83, 3);
+  background-color: #b1adabd5;
+  /* text-shadow: 2px 2px #99b646; */
+  height: 100%;
+  /* flex-flow: row wrap; */
+  -webkit-box-shadow: 2px 2px black, 3px 3px #99b646, 5px rgba(3, 83, 3, 0.849);
+  box-shadow: 2px 2px black, 3px 3px #99b646, 5px rgba(3, 83, 3, 0.849);
+  padding: 1.5%;
+}
+
+form {
+  height: 100%;
+}
+
+h2 {
+  padding-bottom: 0.25em;
+  text-align: center;
+  text-shadow: 3px 3px black;
+}
+
+.form-group > select > option {
+  text-align: center;
+}
+
+.form-group {
+  text-align: center;
+  padding: 0.25em;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.form-group > input,
+.form-group > textarea,
+.form-group > select {
+  /* box-shadow: 0 0 30px #99b646, 0 0 10px rgba(67, 90, 67, 0.836); */
+  line-height: 1.5em;
+  margin-top: 0.25em;
+  border-radius: 50px 50px 50px 50px;
+  padding: 7px;
+  width: 65%;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0.815);
+}
+
+.form-group > label {
+  font-size: 20px;
+  font-weight: 550;
+  text-shadow: 1px 1px white;
+  color: black;
+}
+.form-text {
+  text-shadow: 1px 1px black;
+}
+
+.form-group > :placeholder-shown {
+  text-align: center;
+  font-style: italic;
+  color: black;
+}
+
+.errSpan {
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px red;
+}
+
+.footer {
+  border-top: 1px white solid;
+}
+
+.footer-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* border: 1px black solid; */
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  list-style: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  background-color: #99b646;
+  -ms-flex-flow: row wrap;
+  padding: 1%;
+  font-style: italic;
+}
+
+.footer-top ul li a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 4px 4px 10px black;
+  padding: 1em;
+}
+
+.footer-top ul li a:hover {
+  background-color: rgba(3, 83, 3);
+  -webkit-box-shadow: white 1px 1px;
+  box-shadow: white 1px 1px;
+  box-shadow: white 1px 1px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 0.75em;
+  /* padding-left: 0.25em;
+  padding-right: 0.25em; */
+  text-shadow: 4px 4px 10px black;
+}
+
+.footer-bottom {
+  position: static;
+  left: 0;
+  bottom: 0;
+  color: white;
+  /* background-color: darkgreen; */
+  background-color: #035303;
+  text-align: center;
+  padding: 1%;
+  font-style: italic;
+  text-shadow: 4px 4px 7px black;
+  /* width: 100%; */
+}
+
+.social > i {
+  cursor: pointer;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+
+.social > i:hover {
+  cursor: pointer;
+  color: #99b646;
+  text-shadow: 1px 1px white;
+}
+
+.fa-twitter-square:before {
+  content: "\f081";
+  padding-right: 0.4em;
+}
+
+.fa-facebook-square:before {
+  content: "\f082";
+  padding-right: 0.4em;
+}
+
+/* Media Query - Max Width 900px */
+@media all and (max-width: 900px) {
+  #logo {
+    width: 30%;
+    height: 90px;
+  }
+
+  .nav-bar-container li a:hover {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .landing-heading-container {
+    padding-top: 3%;
+  }
+
+  .landing-heading-container > h1 {
+    padding-bottom: 1%;
+    font-size: 48px;
+    padding-top: 3%;
+  }
+
+  .landing-heading-container > p {
+    font-size: 24px;
+    text-shadow: 3px 2px black;
+    line-height: 1.4;
+  }
+
+  .buttonDiv {
+    padding-top: 9%;
+  }
+
+  .form-container {
+    -ms-flex-preferred-size: 85%;
+    flex-basis: 85%;
+  }
+
+  .form-container > h2 {
+    padding-bottom: 0.25em;
+    padding-top: 0.1em;
+  }
+
+  .form-group > input,
+  .form-group > textarea,
+  .form-group > select {
+    width: 80%;
+  }
+
+  .form-group > label {
+    font-size: 20px;
+    font-weight: 550;
+    text-shadow: 1px 1px white;
+    color: black;
+  }
+  .footer-top > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .footer-top > ul > li {
+    padding: 0.3em;
+  }
+
+  .footer-top > ul > li > a:hover {
+    padding: 0.5em;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
+
+/* Media Query - Max Width 600px */
+@media all and (max-width: 600px) {
+  #logo {
+    height: 25%;
+    width: 42%;
+  }
+
+  .nav-bar-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .nav-bar-container li a {
+    line-height: 2em;
+  }
+
+  .nav-bar-container li a:hover {
+    padding: 0.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .landing-container {
+    height: 100%;
+    line-height: 1;
+  }
+  .btn {
+    margin: 0.01em;
+    padding: 15px;
+  }
+
+  .landing-heading-container {
+    padding: 5%;
+  }
+
+  .landing-heading-container > h1 {
+    padding-bottom: 2%;
+    font-size: 37px;
+  }
+
+  .buttonDiv {
+    padding-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  h2 {
+    padding-top: 0.1em;
+    padding-bottom: 0.15em;
+  }
+
+  .form-group > label {
+    font-size: 20px;
+    font-weight: 550;
+  }
+
+  .form-container {
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
+  }
+
+  .form-group > input,
+  .form-group > textarea,
+  .form-group > select {
+    width: 80%;
+  }
+
+  .submitBtn {
+    padding: 15px;
+  }
+  .footer-top > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .footer-top > ul > li {
+    padding: 0.3em;
+    font-size: 16px;
+  }
+
+  .footer-top > ul > li > a:hover {
+    padding: 0.5em;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+}
