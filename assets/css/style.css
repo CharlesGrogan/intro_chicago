@@ -9,6 +9,7 @@ body {
   /* margin: 10px; */
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-style: italic;
 }
 
 #hidden-gif {
@@ -37,8 +38,8 @@ body {
 }
 
 #logo {
-  width: 15%;
-  height: 5em;
+  width: 20%;
+  height: 5%;
 }
 
 .nav-bar-container {
@@ -74,6 +75,7 @@ body {
   box-shadow: white 1px 1px;
   border-radius: 50px 50px 50px 50px;
   padding: 0.75em;
+  text-shadow: black 1px 1px;
 }
 
 .landing-container {
@@ -88,16 +90,17 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 4%;
 }
 
 .landing-heading-container > h1 {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 45px;
   color: white;
   text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
     0 0 10px rgba(2, 124, 2, 0.836);
   font-style: italic;
+  padding-bottom: 1.5%;
 }
 
 .landing-heading-container > p {
@@ -153,6 +156,7 @@ body {
 .submitBtn:hover {
   background-color: #99b646;
   /* box-shadow: rgb(84, 84, 252) 1px 1px; */
+  text-shadow: white 1px 1px;
   color: rgb(3, 83, 3);
 }
 .bottom-container {
@@ -186,6 +190,7 @@ body {
   /* flex-flow: row wrap; */
   box-shadow: 2px 2px black, 3px 3px rgba(2, 124, 2, 0.836),
     5px rgba(86, 77, 143, 0.699);
+  padding: 1.5%;
 }
 
 form {
@@ -198,6 +203,7 @@ h2 {
   text-align: center;
   text-shadow: 4px 4px 7px black;
 }
+
 .form-group > select > option {
   text-align: center;
 }
@@ -239,6 +245,12 @@ h2 {
 .form-group > :placeholder-shown {
   text-align: center;
   font-style: italic;
+}
+
+.errSpan {
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px red;
 }
 
 .footer {
@@ -290,3 +302,164 @@ h2 {
   font-style: italic;
   text-shadow: 4px 4px 7px black;
 }
+
+/* Media Query - Max Width 900px */
+@media all and (max-width: 900px) {
+  #logo {
+    width: 30%;
+    height: 90px;
+  }
+
+  .nav-bar-container li a:hover {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .landing-heading-container {
+    padding-top: 3%;
+  }
+
+  .landing-heading-container > h1 {
+    padding-bottom: 1%;
+    font-size: 48px;
+    padding-top: 3%;
+  }
+
+  .landing-heading-container > p {
+    font-size: 24px;
+    text-shadow: 3px 2px black;
+    line-height: 1.4;
+  }
+
+  .buttonDiv {
+    padding-top: 9%;
+  }
+
+  .form-container {
+    flex-basis: 85%;
+  }
+
+  .form-container > h2 {
+    padding-bottom: 0.25em;
+    padding-top: 0.1em;
+  }
+
+  .form-group > input,
+  .form-group > textarea,
+  .form-group > select {
+    width: 80%;
+  }
+
+  .form-group > label {
+    font-size: 20px;
+    font-weight: 550;
+    text-shadow: 1px 1px white;
+    color: black;
+  }
+  .footer-top > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-top > ul > li {
+    padding: 0.3em;
+  }
+
+  .footer-top > ul > li > a:hover {
+    padding: 0.5em;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
+
+/* Media Query - Max Width 600px */
+@media all and (max-width: 600px) {
+  #logo {
+    height: 25%;
+    width: 42%;
+  }
+
+  .nav-bar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar-container li a {
+    line-height: 2em;
+  }
+
+  .nav-bar-container li a:hover {
+    padding: 0.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .landing-container {
+    height: 100%;
+  }
+  .btn {
+    margin: 0.01em;
+    padding: 15px;
+  }
+
+  .landing-heading-container {
+    padding: 5%;
+  }
+
+  .landing-heading-container > h1 {
+    padding-bottom: 2%;
+    font-size: 37px;
+  }
+
+  .buttonDiv {
+    padding-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  h2 {
+    padding-top: 0.1em;
+    padding-bottom: 0.15em;
+  }
+
+  .form-group > label {
+    font-size: 20px;
+    font-weight: 550;
+  }
+
+  .form-container {
+    flex-basis: 90%;
+  }
+
+  .form-group > input,
+  .form-group > textarea,
+  .form-group > select {
+    width: 80%;
+  }
+
+  .submitBtn {
+    padding: 15px;
+  }
+  .footer-top > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-top > ul > li {
+    padding: 0.3em;
+    font-size: 16px;
+  }
+
+  .footer-top > ul > li > a:hover {
+    padding: 0.5em;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+}
+
+/* Media Query - Max Width 1200px */
+@media all and (max-width: 1200px);

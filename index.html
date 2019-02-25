@@ -43,20 +43,32 @@
         <h1>
           Reserve Your Seat Now
         </h1>
-
         <p>
-          Lettuce Entertain You is Proud to Present it's Newest Dining
-          Experience! Intro Chicago is Here to Change Your Perception of Fine
-          Dining
+          Lettuce Entertain You® Is Proud To Present...
+        </p>
+        <p>
+          Our Boldest Dining Experience Yet!
+        </p>
+        <p>
+          <strong
+            >INTRO Chicago<span
+              style="font-size:10px"
+              class="trademark"
+              alt="trademark"
+              >®</span
+            >!</strong
+          >
+        </p>
+        <p>
+          Book Exclusive Seating Now!
+        </p>
+        <p>
+          Grand Opening Tasting Menu This Weekend
+        </p>
+        <p>
+          Click The Button To Book Your Reservation Now!
         </p>
 
-        <p>
-          Now is Your Chance to Book Exclusive Seating for our Grand Opening
-          Weekend Tasting Menu
-          <br />
-          Click the Button Below to Book your Reservation Now!
-        </p>
-        <br />
         <div class="buttonDiv">
           <a type="button" class="btn" href="#mid-logo">RESERVE NOW!</a>
         </div>
@@ -92,7 +104,7 @@
                 placeholder="First Name (Required)"
               />
               <br />
-              <span id="fNameErr" style="color:black; font-weight:bold"></span>
+              <span class="errSpan" id="fNameErr"></span>
             </div>
 
             <!-- Last name Input -->
@@ -108,7 +120,7 @@
                 placeholder="Last Name (Required)"
               />
               <br />
-              <span id="lNameErr" style="color:black; font-weight:bold"></span>
+              <span class="errSpan" id="lNameErr"></span>
             </div>
 
             <!-- Email Input -->
@@ -124,7 +136,7 @@
                 placeholder="Enter email (Required)"
               />
               <br />
-              <span id="emailErr" style="color:black; font-weight:bold"></span>
+              <span class="errSpan" id="emailErr"></span>
             </div>
 
             <!-- Zip Code Input -->
@@ -162,10 +174,7 @@
                 <option value="8">Eight</option>
               </select>
               <br />
-              <span
-                id="partySizeErr"
-                style="color:black; font-weight:bold"
-              ></span>
+              <span class="errSpan" id="partySizeErr"></span>
             </div>
 
             <!-- Date Selection Input -->
@@ -195,10 +204,7 @@
                 >
               </select>
               <br />
-              <span
-                id="dateSelectErr"
-                style="color: black; font-weight:bold"
-              ></span>
+              <span class="errSpan" id="dateSelectErr"></span>
             </div>
 
             <!-- Frequent Diner Number Input -->
@@ -274,6 +280,11 @@
                 >If you have more than 8 in your party please call us directly @
                 847.555.4929</small
               >
+              <br />
+              <small id="hashTag" class="form-text" style="font-style:none">
+                📸 Send Photos of the Food & Fun to #LettuceINTROourself For A
+                Chance At $100 Gift Card 📸</small
+              >
             </div>
           </form>
         </div>
@@ -284,9 +295,7 @@
     <div class="footer footer-top toggle">
       <ul>
         <li>
-          <a href="http://www.leye.com" target="_blank"
-            >LETTUCE ENTERTAIN YOU®</a
-          >
+          <a href="http://www.leye.com" target="_blank">LEYE.com®</a>
         </li>
         <li>
           <a href="https://www.leye.com/careers/" target="_blank"
@@ -300,7 +309,7 @@
         </li>
         <li>
           <a href="http://www.leye.com/gift-cards" target="_blank"
-            >LETTUCE ENTERTAIN YOU® GIFT CARDS
+            >LEYE® GIFT CARDS
           </a>
         </li>
         <li>
@@ -318,11 +327,11 @@
 
     <!-- Begin Bottom Footer -->
     <div class="footer footer-bottom toggle">
-      <p style="font-style: italic; padding-bottom: .5em">
+      <p style="padding-bottom: .5em; padding-top:.5em">
         ©2019 INTRO CHICAGO®
       </p>
 
-      <p style="font-style: italic">
+      <p>
         LETTUCE ENTERTAIN YOU® ENTERPRISES, INC
       </p>
     </div>
@@ -336,6 +345,6 @@
 
     <!-- Import JavaScript -->
     <!-- <script src="./assets/javaScript/app.js"></script> -->
-    <script src="./assets/javaScript/test.js"></script>
+    <script type="text/javascript" src="./assets/javaScript/test.js"></script>
   </body>
 </html>
