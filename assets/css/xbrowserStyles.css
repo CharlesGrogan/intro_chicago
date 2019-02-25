@@ -304,7 +304,7 @@ h2 {
   color: white;
   text-decoration: none;
   text-shadow: 4px 4px 10px black;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .footer-top ul li a:hover {
@@ -320,6 +320,11 @@ h2 {
 }
 
 .footer-bottom {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  flex-direction: row;
+  display: flex;
   position: static;
   left: 0;
   bottom: 0;
@@ -327,12 +332,21 @@ h2 {
   /* background-color: darkgreen; */
   background-color: #99b646;
   text-align: center;
-  padding: 1%;
+  padding: 0.1em;
   font-style: italic;
   text-shadow: 4px 4px 7px black;
   /* width: 100%; */
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #99b646;
+}
 .social > i {
   cursor: pointer;
   padding-bottom: 0.2em;
@@ -530,5 +544,7 @@ h2 {
 
   .footer-bottom {
     font-size: 13px;
+    flex-direction: column;
+    display: flex;
   }
 }
