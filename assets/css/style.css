@@ -12,19 +12,19 @@ body {
   font-style: italic;
 }
 
-#hidden-gif {
+/* #hidden-gif {
   display: flex;
   justify-content: center;
   margin-top: 5%;
   width: 100%;
   height: 100%;
   background-color: black;
-}
+} */
 
-#introGif {
+/* #introGif {
   box-shadow: 5px 5px green, 0 0 rgb(29, 214, 29);
   border: 1px white solid;
-}
+} */
 
 .logo-container {
   display: -webkit-box;
@@ -90,28 +90,32 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 4%;
+  padding-top: 2.5%;
 }
 
 .landing-heading-container > h1 {
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 65px;
   color: white;
-  text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
-    0 0 10px rgba(2, 124, 2, 0.836);
+  font-weight: 100;
+  text-shadow: 2px 2px black, 3px 3px rgba(3, 83, 3, 0.849);
   font-style: italic;
-  padding-bottom: 1.5%;
+  padding-bottom: 0.5%;
 }
 
 .landing-heading-container > p {
-  font-size: 18px;
+  font-size: 25px;
   color: white;
   /* padding-bottom: 1%; */
   /* padding: 1%; */
   font-style: italic;
-  text-shadow: 4px 4px 10px black, 0 0 30px rgba(3, 83, 3, 0.849),
-    0 0 10px rgba(2, 124, 2, 0.836);
+  text-shadow: 2px 2px black, 3px 3px rgba(3, 83, 3, 0.849);
   line-height: 1.5;
+}
+.landing-heading-container > .nameAnnouce {
+  font-size: 50px;
+  font-weight: 200;
+  text-shadow: 3px 3px black;
 }
 
 .btn {
@@ -182,8 +186,8 @@ body {
   color: white;
   /* flex: 1; */
   flex-basis: 55%;
-  border: 5px black ridge;
-  border-color: #99b646;
+  border: 10px black ridge;
+  border-color: rgb(3, 83, 3);
   background-color: #b1adabd5;
   /* text-shadow: 2px 2px #99b646; */
   height: 100%;
