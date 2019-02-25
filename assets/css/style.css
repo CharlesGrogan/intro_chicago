@@ -43,11 +43,13 @@ body {
 }
 
 .nav-bar-container {
-  overflow: hidden;
-  background-color: rgb(3, 83, 3);
+  /* overflow: hidden; */
+
   display: flex;
+  background-color: rgb(3, 83, 3);
   border-top: 2px black solid;
   border-bottom: 1px white solid;
+  /* justify-content: space-around; Needed for IE work around `space-evenly` not supported */
   justify-content: space-evenly;
   list-style: none;
   flex: 1;
