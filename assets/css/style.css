@@ -166,8 +166,8 @@ body {
 
 #formLogo,
 .logo-container {
-  border-top: 2px ridge #99b646;
-  border-bottom: 2px ridge #99b646;
+  border-top: 2px ridge rgb(3, 83, 3);
+  border-bottom: 2px ridge rgb(3, 83, 3);
 }
 
 .form-container {
@@ -177,12 +177,9 @@ body {
   /* flex: 1; */
   flex-basis: 45%;
   border: 10px black ridge;
-  border-color: rgb(3, 83, 3);
+  /* border-color: white; */
   background-color: #b1adabd5;
-  /* text-shadow: 2px 2px #99b646; */
   height: 100%;
-  /* flex-flow: row wrap; */
-  box-shadow: 2px 2px black, 3px 3px #99b646, 5px rgba(3, 83, 3, 0.849);
   padding: 1.5%;
 }
 
@@ -260,7 +257,7 @@ h2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-flow: row wrap;
-  background-color: #99b646;
+  background-color: rgb(3, 83, 3);
   -ms-flex-flow: row wrap;
   padding: 1%;
   font-style: italic;
@@ -274,7 +271,7 @@ h2 {
 }
 
 .footer-top ul li a:hover {
-  background-color: rgba(3, 83, 3);
+  background-color: #99b646;
   box-shadow: white 1px 1px;
   box-shadow: white 1px 1px;
   border-radius: 50px 50px 50px 50px;
@@ -289,7 +286,7 @@ h2 {
   left: 0;
   bottom: 0;
   color: white;
-  background-color: rgba(3, 83, 3);
+  background-color: #99b646;
   text-align: center;
   padding: 1%;
   font-style: italic;
@@ -305,7 +302,7 @@ h2 {
 
 .social > i:hover {
   cursor: pointer;
-  color: #99b646;
+  color: rgb(3, 83, 3);
   text-shadow: 1px 1px white;
 }
 
