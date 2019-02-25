@@ -70,7 +70,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   padding: 1%;
-  /* position: fixed; */
 }
 
 .nav-bar-container li a {
@@ -371,6 +370,7 @@ h2 {
   padding-right: 0.4em;
 }
 
+/* ----------------------------------------------------- */
 /* Media Query - Max Width 900px */
 @media all and (max-width: 900px) {
   #logo {
@@ -446,6 +446,7 @@ h2 {
   }
 }
 
+/* ------------------------------------------------------ */
 /* Media Query - Max Width 600px */
 @media all and (max-width: 600px) {
   #logo {
