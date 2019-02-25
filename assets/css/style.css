@@ -294,6 +294,29 @@ h2 {
   padding: 1%;
   font-style: italic;
   text-shadow: 4px 4px 7px black;
+  /* width: 100%; */
+}
+
+.social > i {
+  cursor: pointer;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+
+.social > i:hover {
+  cursor: pointer;
+  color: #99b646;
+  text-shadow: 1px 1px white;
+}
+
+.fa-twitter-square:before {
+  content: "\f081";
+  padding-right: 0.4em;
+}
+
+.fa-facebook-square:before {
+  content: "\f082";
+  padding-right: 0.4em;
 }
 
 /* Media Query - Max Width 900px */
@@ -454,10 +477,3 @@ h2 {
     font-size: 13px;
   }
 }
-
-/* Media Query - Max Width 430px */
-/* @media all and (max-width: 430px) {
-  .nameAnnouce {
-    line-height: 0;
-  }
-} */
