@@ -387,6 +387,7 @@ h2 {
 
   .landing-container {
     height: 100%;
+    line-height: 1;
   }
   .btn {
     margin: 0.01em;
@@ -452,5 +453,9 @@ h2 {
   }
 }
 
-/* Media Query - Max Width 1200px */
-@media all and (max-width: 1200px);
+/* Media Query - Max Width 430px */
+/* @media all and (max-width: 430px) {
+  .nameAnnouce {
+    line-height: 0;
+  }
+} */
