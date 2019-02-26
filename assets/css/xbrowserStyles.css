@@ -219,7 +219,7 @@ form {
 h2 {
   padding-bottom: 0.25em;
   text-align: center;
-  text-shadow: 3px 3px black;
+  text-shadow: 2px 2px black;
 }
 
 .form-group > select > option {
