@@ -252,6 +252,15 @@ h2 {
   background-color: rgba(255, 255, 255, 0.815);
 }
 
+.form-group > input,
+.form-group > textarea {
+  cursor: text;
+}
+
+.form-group > select {
+  cursor: pointer;
+}
+
 .form-group > label {
   font-size: 20px;
   font-weight: 550;
@@ -330,14 +339,13 @@ h2 {
   position: static;
   left: 0;
   bottom: 0;
-  color: white;
-  /* background-color: darkgreen; */
-  background-color: #99b646;
+  color: black;
   text-align: center;
   padding: 0.1em;
   font-style: italic;
-  text-shadow: 4px 4px 7px black;
+  /* text-shadow: 4px 4px 7px black; */
   /* width: 100%; */
+  font-weight: 550;
 }
 
 .social {
@@ -347,19 +355,19 @@ h2 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #99b646;
+  background-color: white;
 }
 .social > i {
   cursor: pointer;
   padding-bottom: 0.2em;
-  padding-top: 0.2em;
+  /* padding-top: 0.2em; */
   color: rgb(3, 83, 3);
-  text-shadow: 2px 2px white;
+  text-shadow: 1px 1px black;
 }
 
 .social > i:hover {
   cursor: pointer;
-  color: white;
+  color: #99b646;
   text-shadow: 2px 2px black, 3px 3px white;
 }
 
