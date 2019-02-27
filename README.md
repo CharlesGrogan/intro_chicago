@@ -87,8 +87,12 @@ and they need a landing page where guests can complete an inquiry form to book.
 
 ![footer_mobile](https://user-images.githubusercontent.com/32818764/53475736-4d3d0380-3a36-11e9-88a4-794814b52b59.png)
 
+# Google Analytics® `Submit Button` onClick Event Tracker
+
+![googlegoals](https://user-images.githubusercontent.com/32818764/53477382-313b6100-3a3a-11e9-9a75-c55925a16eb1.png)
+
 # A HUGE shout-out & Thank You!!!
-I would Like to give a special shout out and say Thank You to Christopher, Beth, Catie, & Lauren @ LEYE! You all have made this experience special in it's own way. Very grateful for this opportunity!
+I would like to give a special shout out and say Thank You to Christopher, Beth, Catie, & Lauren @ LEYE! You all have made this experience special in your own way. Very grateful for this opportunity!
 
 
 
