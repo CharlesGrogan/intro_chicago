@@ -91,6 +91,11 @@ and they need a landing page where guests can complete an inquiry form to book.
 
 ![googlegoals](https://user-images.githubusercontent.com/32818764/53477382-313b6100-3a3a-11e9-9a75-c55925a16eb1.png)
 
+# GTmetrix Site Score
+### Performace Report
+
+![siteperformance](https://user-images.githubusercontent.com/32818764/53508225-f3146080-3a7e-11e9-9e9b-baf95f8a83c8.png)
+
 # A HUGE shout-out & Thank You!!!
 I would like to give a special shout out and say Thank You to Christopher, Beth, Catie, & Lauren @ LEYE! You all have made this experience special in your own way. Very grateful for this opportunity!
 
